@@ -10,16 +10,16 @@ Let’s start by listing our requirements for this shopping cart:
 * It should allow the user to retrieve the total amount at any point.
 
 ## Building a Specification Based on Requirements
-In this section, we’ll start by writing out some specifications based on the above requirements. These specifications will be written in a manner that any non-technical stakeholder can understand.
-
+In this section, we’ll start by writing out some specifications based on the above requirements. 
 For example, the requirement that a shopping cart should initially be empty can be written as follows:
 
+```
 Given a shopping cart
   initially
     it has 0 items
     it has 0 units
     the total amount is 0.00
-
+```
 Grouping of specifications can be indicated using indentation. This particular specification can be written using Ginkgo as follows:
 
 ```go
