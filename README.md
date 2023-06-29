@@ -1,6 +1,6 @@
 # cart-service
 ## Introducing the Application
-The application that we will build is a simple shopping cart. It’s a simple application but it will help us demonstrate how BDD can help develop.
+The application that we will build is a simple shopping cart. It’s a simple application but it will help us demonstrate how Behavior-driven Development(BDD) can help develop.
 Let’s start by listing our requirements for this shopping cart:
 
 * It should allow the user to add items,
@@ -80,5 +80,32 @@ Given a shopping cart
       should reduce the number of items by 1
       should reduce the number of units by 2
       should reduce the amount by twice the item price
+
+```
+
+Block Diagram of ginkGo-
+```sql
+              +-------------------------------+
+              |           Describe            |
+              |_______________________________|
+              |                               |
+              |       +-----------------+     |
+              |       |    Context      |     |
+              |       |_________________|     |
+              |       |                 |     |
+              |       |      It         |     |
+              |       |_________________|     |
+              |       |                 |     |
+              |       |      It         |     |
+              |       |_________________|     |
+              |                               |
+              |       +-----------------+     |
+              |       |    Context      |     |
+              |       |_________________|     |
+              |       |                 |     |
+              |       |      It         |     |
+              |       |_________________|     |
+              |                               |
+              |_______________________________|
 
 ```
