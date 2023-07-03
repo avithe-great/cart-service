@@ -55,16 +55,16 @@ By using this hierarchical structure, we can organize your tests in a descriptiv
 - `Setup and Teardown:` Ginkgo provides BeforeEach, AfterEach, BeforeSuite, and AfterSuite hooks that allow us to set up and tear down common test dependencies. These hooks are defined using the BeforeSuite, AfterSuite, BeforeEach, and AfterEach functions provided by Ginkgo.
 
 
-`BeforeSuite:` The BeforeSuite hook is executed once before any test suites are run. It is typically used to perform setup tasks that are common to all test suites. For example, initializing a test database or setting up global test variables can be done in this hook.
+- `BeforeSuite:` The BeforeSuite hook is executed once before any test suites are run. It is typically used to perform setup tasks that are common to all test suites. For example, initializing a test database or setting up global test variables can be done in this hook.
 
 
-`AfterSuite:` The AfterSuite hook is executed once after all test suites have completed. It is commonly used to perform cleanup tasks or teardown operations that are required after all tests have finished running. Examples include closing database connections or cleaning up temporary files.
+- `AfterSuite:` The AfterSuite hook is executed once after all test suites have completed. It is commonly used to perform cleanup tasks or teardown operations that are required after all tests have finished running. Examples include closing database connections or cleaning up temporary files.
 
 
-`BeforeEach:` The BeforeEach hook is executed before each individual test case within a test suite. It is used to set up any necessary state or perform common setup tasks specific to each test case. For instance, if we need to initialize certain variables or resources before each test, we can do so in this hook.
+- `BeforeEach:` The BeforeEach hook is executed before each individual test case within a test suite. It is used to set up any necessary state or perform common setup tasks specific to each test case. For instance, if we need to initialize certain variables or resources before each test, we can do so in this hook.
 
 
-`AfterEach:` The AfterEach hook is executed after each individual test case within a test suite. It is typically used for cleanup operations or resetting state after each test. If we need to release resources or revert changes made during a test case, we can do so in this hook. 
+- `AfterEach:` The AfterEach hook is executed after each individual test case within a test suite. It is typically used for cleanup operations or resetting state after each test. If we need to release resources or revert changes made during a test case, we can do so in this hook. let's understand it with following example.
 
 # cart-service
 ## Introducing the Application
